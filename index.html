@@ -4,30 +4,29 @@
 
 <head>
   <meta charset="utf-8">
-
   <title>Home - YesDok</title>
   <meta name="description"
     content="YesDok focuses on providing an excellent and affordable health consultation service. Presenting a robust platform for online health consultation with real online doctors, accessible anywhere and anytime">
   <meta name="keywords" content="YesDok,konsultasi,tanyadokter,dokter,Dokter24Jam,DokterBeneran">
   <meta name="author" content="Ricky Tanudjaja (rickytanudjaja95@gmail.com)">
-  <meta property="og:type" content="article" />
+  <!-- <meta property="og:type" content="article" />
   <meta property="og:locale" content="en_GB" />
   <meta property="og:locale:alternate" content="id_ID" />
   <meta name="theme-color" content="#024668" />
   <meta name="apple-itunes-app" content="app-id=1275373472">
   <meta name="google-play-app" content="app-id=com.yesdok.mobile.app">
-  <meta name="apple-touch-icon" href="/img/favicon.ico">
+  <meta name="apple-touch-icon" href="/img/favicon.ico"> -->
+  <link rel="icon" href="assets/favicon.ico" />
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link rel="stylesheet" href="css/bootstrap.css">
-
 </head>
 
 <body>
   <header>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><img src="assets/headeryesdok.png" width="70" class="d-inline-block align-top"
-          alt="YesDok nav image"></a>
+      <a class="navbar-brand mx-auto" href="#"><img src="assets/headeryesdok.png" width="120"
+          class="d-inline-block align-top" alt="YesDok nav image"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -69,6 +68,28 @@
   </header>
 
   <main>
+    <!-- Book Modal -->
+    <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-labelledby="bookModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookModalLabel">Book Consultation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Please login to book a consultation.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Carousel -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -105,26 +126,14 @@
           <h2>Worried sick? Ask doctor right away!</h2>
         </div>
         <div class="col-4 text-left">
-          <button class="btn btn-danger btn-lg active" type="book">BOOK ONLINE</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div row>
-        <div class="col-md-6">
-          
-        </div>
-        <div class="col-md-6">
-          
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-danger btn-lg active" data-toggle="modal" data-target="#bookModal">BOOK
+            ONLINE</button>
         </div>
       </div>
     </div>
 
     <div class="container marketing">
-
-      
-
 
       <hr class="featurette-divider">
 
@@ -171,9 +180,9 @@
 
     <hr class="featurette-divider">
 
-    <div class="row col-md-12">
+    <div class="row col-md-12 mb-2">
       <div class="col-md-7 order-md-2">
-        <h2>YesDok Introduction.</span></h2>
+        <h2>YesDok Introduction.</h2>
         <p class="lead">You can now reach professional doctors anywhere and anytime convenient to you! YesDok is
           designed for efﬁciency that will save your time and money for unnecessary doctor visits.</p>
       </div>
@@ -185,29 +194,146 @@
       </div>
     </div>
 
-    <hr class="featurette-divider">
-
-    <!-- articles with points  ==> linked to news -->
+    <!-- <hr class="featurette-divider">
     <article>
-    </article>
+      articles with points  ==> linked to news
+    </article> -->
 
-    <hr class="featurette-divider">
+    <!-- <hr class="featurette-divider">
     Career
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form> -->
+
+    <div class="container-fluid text-center text-light bg py-3">
+      <div class="container">
+        <h2>About Us.</h2>
+        <p>Our company culture was built by an individual who looks forward, is perfectionist and emphasizes on strong
+          discipline. Making continuous improvements is in our company DNA.</p>
+        <p>YesDok is an ehealth service that is reachable through mobile platform which is very powerful and easy to
+          use.
+          Penetrating 17.504 islands and 260 million users in Indonesia.</p>
+        <p>YesDok doctor-partners are those that are registered on Indonesian Medical Council. They are committed in
+          being
+          preventive, promotive and delivering quality health information.</p>
+        <p><strong>Welcome and thank you for joining YesDok</strong></p>
+      </div>
+    </div>
 
     <hr class="featurette-divider">
-    About Us
+
+    <div class="container text-center">
+      <form>
+        <h2>Contact Us</h2>
+        <p>We are always ready to answer your questions about YesDok. Please let us know your queries and how we can
+          help you.</p>
+        <div class="row">
+          <div class="col pl-0">
+            <input type="name" class="form-control" id="contactUsFullName" aria-describedby="nameHelp"
+              placeholder="Fullname">
+          </div>
+          <div class="col pr-0">
+            <input type="email" class="form-control" id="contactUsEmail" aria-describedby="emailHelp"
+              placeholder="E-mail">
+          </div>
+        </div>
+        <div class="row my-2">
+          <textarea class="form-control" id="contactUsMessage" rows="3" placeholder="Your message"></textarea>
+          <!-- <textarea type="message" class="form-control" id="contactUsMessage" aria-describedby="messageHelp" rows="3"></textarea> -->
+        </div>
+        <div id="RecaptchaField2" class="row text-center">
+          <iframe
+            src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LfPFDIUAAAAAAdU03WEoy4vq6oQEIUUvyx5JKFR&amp;co=aHR0cHM6Ly93d3cueWVzZG9rLmNvbTo0NDM.&amp;hl=en&amp;v=HYx6hBAtwYatsD8qzq7tXNTk&amp;size=normal&amp;cb=hkzrvuy5irou"
+            width="304" height="78" role="presentation" name="a-w58dqmghxak1" frameborder="0" scrolling="no"
+            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+          <button type="submit" class="btn btn-primary btn-lg ml-2">Send Message</button>
+        </div>
+    </div>
+    </form>
+    </div>
 
     <hr class="featurette-divider">
-    Contact Us
-
-    <hr class="featurette-divider">
-
 
   </main>
 
-  <footer>
-    Footer
-    <!-- footer proper design -->
+  <footer class="footer">
+    <div class="container-fluid bg-secondary text-white py-5">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-center">
+          <img src="assets/headeryesdok.png" width="160" class="d-inline-block align-top pb-4" alt="YesDok nav image">
+          <p>YesDok is an ehealth service that is reachable through mobile platform which is very powerful and easy to
+            use. Penetrating 17.504 islands and 260 million users in Indonesia.</p>
+          <button type="submit" class="btn btn-outline-light ml-2">CONTACT US</button>
+          <div class="pt-2">
+            <img src="assets/footer_play_store.png" width="160" height="55" class="d-inline-block align-top px-1 py-1">
+            <img src="assets/footer_app_store.png" width="160" height="55" class="d-inline-block align-top px-1 py-1">
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 text-left">
+          <h4>INDONESIA</h4>
+          <a class="text-white"
+            href="https://www.google.com/maps/place/Kirana+Boutique+Office/@-6.1741032,106.8940087,21z/data=!4m5!3m4!1s0x2e69f520aed63795:0xd18f4ce7a8259dbb!8m2!3d-6.174088!4d106.8940886"
+            target="_BLANK" rel="nofollow">
+            <table style="padding:0px;margin:0px;">
+              <tbody>
+                <tr>
+                  <td style="position:relative;vertical-align:top;width:30px;">
+                    <span>
+                      <img src="assets/indonesia_flag.png" style="width:26px;margin-right:5px;">
+                    </span>
+                  </td>
+                  <td style="text-align:left;">
+                    PT. Yes Dok Indonesia,<br>
+                    Ruko Kirana Boutique <br>
+                    Jl. Boulevard Gading Raya Blok F3 <br>
+                    No.11 <br>
+                    Jakarta 14240 <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </a>
+          <br/>
+          <h4>SINGAPORE</h4>
+          <table style="padding:0px;margin:0px;">
+            <tbody>
+              <tr>
+                <td style="position:relative;vertical-align:top;width:30px;">
+                  <span>
+                    <img src="assets/singapore_flag.png" style="width:26px;margin-right:5px;">
+                  </span>
+                </td>
+                <td style="text-align:left;">
+                  YesDok Pte. Ltd.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br/>
+        </div>
+        <div class="col-12 col-lg-4 text-left">
+          <h4>CONTACT</h4>
+          <h4>FOLLOW US</h4>
+        </div>
+      </div>
+    </div>
+    <div class="p-3 mb-2 container-fluid text-light bg-dark">
+      COPYRIGHT &copy;2020 ALL RIGHTS RESERVED BY YesDok
+    </div>
   </footer>
 
   <!-- <script src="js/scripts.js"></script> -->
