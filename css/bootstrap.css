@@ -4857,6 +4857,10 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+.card-img-top {
+  padding: 1.25rem;
+}
+
 .card-img,
 .card-img-top {
   border-top-left-radius: calc(0.25rem - 1px);
